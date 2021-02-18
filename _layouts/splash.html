@@ -6,19 +6,18 @@ layout: single
     <div class="heroContainer pageSpacing">
       <div class="intro">
         {% if page.latest %}
-          <img class="pictogramHero" src="{{ site.url }}{{ site.baseurl }}/assets/images/branding/es_pictogram_expressive_dark.svg" />
+          <img class="pictogramHero" src="{{ site.url }}{{ site.baseurl }}/images/FHIR.png" />
         {% endif %}
         <h1 class="hero small">
-          Welcome to IBM Event Streams <a onclick="toggleDropdown('open');" href="#" aria-label="Change Version"
-            tabindex="0" class="versionPill">{{ page.collection }}</a>
+          Welcome to IBM FHIR® Server <a onclick="toggleDropdown('open');" href="#" aria-label="Change Version"
+            tabindex="0" class="versionPill">{{ page.collection }}</a> 
         </h1>
         <h1 class="hero">
           Documentation
         </h1>
 
         {% if page.latest %}
-          <p class="esIntro">Built on Apache Kafka, IBM Event Streams is a high-throughput, fault-tolerant, event
-            streaming platform that helps you build intelligent, responsive, event-driven applications.</p>
+          <p class="esIntro"></p>
 
           {% if page.latest %}
             {%- assign collectionURL = "" -%}
@@ -32,13 +31,13 @@ layout: single
       </div>
     </div>
     {% if page.latest %}
-      {% include latestFeaturesHero.html %}
+<!--      {% include latestFeaturesHero.html %}
     {% endif %}
   </div>
   <div id="remotePanel" class="panel remotePanel pageSpacing">
   
-  </div>
-  <div class='loading'>
+  </div> -->
+  <div class='loading'> 
     <p class='loadingText'>
       Loading...
     </p>

@@ -7,5 +7,5 @@ author_profile: false
 mastheadNavItem: Tutorials
 sort_by: title
 sections:
-  - name: Tutorials for IBM Event Streams
+  - name: Tutorials for IBM FHIR Server
 ---
