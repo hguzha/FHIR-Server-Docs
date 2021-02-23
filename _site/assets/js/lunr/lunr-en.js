@@ -144,7 +144,7 @@ function searchResults(theSearchInput) {
             structure += '</div>'
           }
         });
-        structure += '<div class="ctaArea"><img alt="" role="presentation" src="http://localhost:4000/FHIR-Server_Docs/assets/images/icons/next.svg" /></div>'
+        structure += '<div class="ctaArea"><img alt="" role="presentation" src="http://localhost:4000/fhir-server-docs/assets/images/icons/next.svg" /></div>'
         structure += '</div>'
         structure += '</div>'
       }
