@@ -16,11 +16,7 @@ title_separator          : "-"
 name                     : &name "IBM" # &name is a YAML anchor which can be *referenced later
 description              : &description "IBM Event Streams is an event-streaming platform based on the open-source Apache Kafka project."
 url                      : "https://hguzha.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-<<<<<<< HEAD
 baseurl                  : "/fhir-server-docs" # the subpath of your site, e.g. "/blog"
-=======
-baseurl                  : "/FHIR-Server_Docs" # the subpath of your site, e.g. "/blog"
->>>>>>> 76e2d76ea2a7d0f0c98a4a8deafe5ebb9b8a662a
 repository               : "FHIR-Server-Docs"
 relative_permalinks      : false
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
