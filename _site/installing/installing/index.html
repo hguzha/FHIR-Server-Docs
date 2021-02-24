@@ -27,7 +27,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-02-23T14:33:29+00:00">
+  <meta property="article:published_time" content="2021-02-24T14:26:07+00:00">
 
 
 
@@ -874,11 +874,85 @@
           </header>
           
           <div class="content">
-            <h3 id="installing-the-ibm-fhir-server-operator">Installing the IBM FHIR Server Operator</h3>
+            <p>The following sections provide instructions about installing IBM FHIR Server on the Red Hat OpenShift Container Platform. The instructions are based on using the OpenShift Container Platform web console and <code class="language-plaintext highlighter-rouge">oc</code> command line utility.</p>
+
+<p>When deploying in an air-gapped environment, link to airgap instructions.</p>
+
+<h2 id="overview">Overview</h2>
+
+<p>IBM FHIR Server is an <a href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/" target="_blank">operator-based</a> release and uses custom resources to define your IBM FHIR Server configurations. The IBM FHIR Server operator uses the custom resources to deploy and manage the entire lifecycle of your IBM FHIR Server instances. Custom resources are presented as YAML configuration documents that define instances of the <code class="language-plaintext highlighter-rouge">IBMFHIRServer</code> custom resource type.</p>
+
+<p>Installing IBM FHIR Server has two phases:</p>
+
+<ol>
+  <li>Install the IBM FHIR Server operator: this will deploy the operator that will install and manage your IBM FHIR Server instances.</li>
+  <li>Install one or more instances of IBM FHIR Server by using the operator.</li>
+</ol>
+
+<h2 id="before-you-begin">Before you begin</h2>
+
+<ul>
+  <li>Ensure you have set up your environment , including setting up your OpenShift Container Platform.</li>
+  <li>Obtain the connection details for your OpenShift Container Platform cluster from your administrator.</li>
+</ul>
+
+<h2 id="create-a-project-namespace">Create a project (namespace)</h2>
+
+<p>Create a namespace into which the Event Streams instance will be installed by creating a <a href="https://docs.openshift.com/container-platform/4.6/applications/projects/working-with-projects.html" target="_blank">project</a>.
+When you create a project, a namespace with the same name is also created.</p>
+
+<p>Ensure you use a namespace that is dedicated to a single instance of IBM FHIR Server.</p>
+
+<p>A single namespace per instance also allows for finer control of user accesses.</p>
+
+<p><strong>Important:</strong> Do not use any of the default or system namespaces to install an instance of Event Streams (some examples of these are: <code class="language-plaintext highlighter-rouge">default</code>, <code class="language-plaintext highlighter-rouge">kube-system</code>, <code class="language-plaintext highlighter-rouge">kube-public</code>, and <code class="language-plaintext highlighter-rouge">openshift-operators</code>).</p>
+
+<h2 id="add-the-ibm-fhir-server-operator-to-the-catalog">Add the IBM FHIR Server operator to the catalog</h2>
+
+<p>Before you can install the IBM FHIR Server operator and use it to create instances of IBM FHIR Server, you must have the IBM Operator Catalog available in your cluster.</p>
+
+<p>If you have other IBM products installed in your cluster, then you already have the IBM Operator Catalog available, and you can continue to <a href="#install-the-event-streams-operator">installing</a> the IBM FHIR Server operator.</p>
+
+<p>If you are installing IBM FHIR Server as the first IBM product in your cluster, complete the following steps.</p>
+
+<p>To make the IBM FHIR Server operator available in the OpenShift OperatorHub catalog, create the following YAML files and apply them as  follows.</p>
+
+<p>To add the IBM Operator Catalog:</p>
+
+<ol>
+  <li>
+    <p>Create a file for the IBM Operator Catalog source with the following content, and save as <code class="language-plaintext highlighter-rouge">IBMCatalogSource.yaml</code>:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+   name: ibm-operator-catalog
+   namespace: openshift-marketplace
+spec:
+   displayName: "IBM Operator Catalog"
+   publisher: IBM
+   sourceType: grpc
+   image: docker.io/ibmcom/ibm-operator-catalog
+   updateStrategy:
+     registryPoll:
+       interval: 45m
+</code></pre></div>    </div>
+  </li>
+  <li>Log in to your Red Hat OpenShift Container Platform as a cluster administrator by using the <a href="https://docs.openshift.com/container-platform/4.4/cli_reference/openshift_cli/getting-started-cli.html#cli-logging-in_cli-developer-commands"><code class="language-plaintext highlighter-rouge">oc</code> CLI</a>.</li>
+  <li>
+    <p>Apply the source by using the following command:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">oc apply -f IBMCatalogSource.yaml</code></p>
+  </li>
+</ol>
+
+<p>The IBM Operator Catalog source is added to the OperatorHub catalog, making the Event Streams operator available to install.</p>
+
+<h2 id="installing-the-ibm-fhir-server-operator">Installing the IBM FHIR Server Operator</h2>
 
 <p>See <a href="inventory/ibmFhirServerOperatorSetup/README.md#installing">Installing</a> in the IBM FHIR Server Operator Setup README.</p>
 
-<h3 id="creating-an-instance-of-ibm-fhir-server">Creating an instance of IBM FHIR Server</h3>
+<h2 id="creating-an-instance-of-ibm-fhir-server">Creating an instance of IBM FHIR Server</h2>
 
 <p>See <a href="inventory/ibmFhirServerOperator/README.md#creating-an-instance">Creating an instance</a> in the IBM FHIR Server Operator README.</p>
 
@@ -893,6 +967,10 @@
           <div class="fixedSidebar">
             <nav class="toc">
               <ul class="toc__menu">
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#before-you-begin">Before you begin</a></li>
+  <li><a href="#create-a-project-namespace">Create a project (namespace)</a></li>
+  <li><a href="#add-the-ibm-fhir-server-operator-to-the-catalog">Add the IBM FHIR Server operator to the catalog</a></li>
   <li><a href="#installing-the-ibm-fhir-server-operator">Installing the IBM FHIR Server Operator</a></li>
   <li><a href="#creating-an-instance-of-ibm-fhir-server">Creating an instance of IBM FHIR Server</a></li>
 </ul>
