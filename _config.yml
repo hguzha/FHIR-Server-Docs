@@ -225,7 +225,7 @@ collections:
     #permalink: /:collection/:categories/:slug/
     #order: 6
   "10.2":
-    label: "1.0"
+    label: "10.2"
     output: true
     version: true
     tag: Latest
@@ -399,7 +399,7 @@ defaults:
       #mastheadNavItem: Documentation
       #sidebar:
         #nav: "101docs"
-   _10.2
+   #_10.2
   - scope:
       path: ""
       type: "10.2"
