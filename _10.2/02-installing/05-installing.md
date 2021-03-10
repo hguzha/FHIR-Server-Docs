@@ -1,6 +1,6 @@
 ---
 title: "Installing"
-excerpt: "Installing IBM Event Streams."
+excerpt: "Installing IBM FHIR Server."
 categories: installing
 slug: installing
 toc: true
@@ -27,14 +27,14 @@ Installing IBM FHIR Server has two phases:
 
 ## Create a project (namespace)
 
-Create a namespace into which the {{site.data.reuse.short_name}} instance will be installed by creating a [project](https://docs.openshift.com/container-platform/4.6/applications/projects/working-with-projects.html){:target="_blank"}.
+Create a namespace into which the IBM FHIR Server instance will be installed by creating a [project](https://docs.openshift.com/container-platform/4.6/applications/projects/working-with-projects.html){:target="_blank"}.
 When you create a project, a namespace with the same name is also created.
 
 Ensure you use a namespace that is dedicated to a single instance of IBM FHIR Server.
 
 A single namespace per instance also allows for finer control of user accesses.
 
-**Important:** Do not use any of the default or system namespaces to install an instance of {{site.data.reuse.short_name}} (some examples of these are: `default`, `kube-system`, `kube-public`, and `openshift-operators`).
+**Important:** Do not use any of the default or system namespaces to install an instance of IBM FHIR Server (some examples of these are: `default`, `kube-system`, `kube-public`, and `openshift-operators`).
 
 ## Add the IBM FHIR Server operator to the catalog
 
@@ -70,7 +70,7 @@ To add the IBM Operator Catalog:
 
    `oc apply -f IBMCatalogSource.yaml`
 
-The IBM Operator Catalog source is added to the OperatorHub catalog, making the {{site.data.reuse.short_name}} operator available to install.
+The IBM Operator Catalog source is added to the OperatorHub catalog, making the IBM FHIR Server operator available to install.
 
 ## Installing the IBM FHIR Server Operator
 

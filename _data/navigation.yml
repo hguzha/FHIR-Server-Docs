@@ -43,8 +43,8 @@ latestdocs:
     children:
       - title: "Introduction"
         url: /about/overview/
-      - title: "Details"
-        url: /about/whats-new/
+#      - title: "Details"
+ #       url: /about/whats-new/
 #      - title: "Key concepts"
  #       url: /about/key-concepts/
  #     - title: "Producing messages"
@@ -81,8 +81,8 @@ latestdocs:
         url: /installing/uninstalling/
       - title: "Tracking license consumption of IBM FHIR Server"
         url: /installing/upgrading/
- #     - title: "Migrating to Apicurio Registry"
- #       url: /installing/migrating-to-apicurio/
+      - title: "Upgrading"
+        url: /installing/migrating-to-apicurio/
  # - title: Getting started
   #  children:
 #      - title: "Logging in"
@@ -125,10 +125,10 @@ latestdocs:
         url: /security/managing-access/
       - title: "SecurityContextConstraints Requirements"
         url: /security/encrypting-data/
-#      - title: "Configuring secure JMX connections"
-#        url: /security/secure-jmx-connections/
-#      - title: "Network policies"
-#        url: /security/network-policies/
+      - title: "Documentation"
+        url: /security/secure-jmx-connections/
+      - title: "License"
+        url: /security/network-policies/
 #      - title: "Considerations for GDPR"
 #        url: /security/gdpr-considerations/
 #  - title: Geo-replication

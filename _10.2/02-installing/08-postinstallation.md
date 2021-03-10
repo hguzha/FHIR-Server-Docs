@@ -6,4 +6,4 @@ slug: post-installation
 toc: true
 ---
 
-* Storage for the database instance that the IBM FHIR Server connects to is outside the scope of this Operator.cts to is outside the scope of this operator
+* Storage for the database instance that the IBM FHIR Server connects to is outside the scope of this Operator.

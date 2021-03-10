@@ -8,7 +8,7 @@ toc: true
 
 ## Prerequisites
 
-Red Hat OpenShift Container Platform 4.4 or later installed on one of the following platforms:
+Red Hat OpenShift Container Platform 4.5 or later installed on one of the following platforms:
 
 * Linux x86_64
 

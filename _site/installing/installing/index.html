@@ -3,14 +3,14 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Installing - FHIR Server Docs</title>
-<meta name="description" content="Installing IBM Event Streams.">
+<meta name="description" content="Installing IBM FHIR Server.">
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="FHIR Server Docs">
 <meta property="og:url" content="http://localhost:4000/FHIR-Server-Docs/installing/installing/" />
 <meta property="og:title" content="Documentation | Installing" />
-<meta property="og:description" content="Installing IBM Event Streams." />
+<meta property="og:description" content="Installing IBM FHIR Server." />
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="IBM Event Streams | Installing" />
@@ -18,7 +18,7 @@
 
 
 
-  <meta property="og:description" content="Installing IBM Event Streams.">
+  <meta property="og:description" content="Installing IBM FHIR Server.">
 
 
 
@@ -27,7 +27,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-03-05T20:05:41+00:00">
+  <meta property="article:published_time" content="2021-03-10T13:38:08+00:00">
 
 
 
@@ -404,27 +404,6 @@
               <a href="/FHIR-Server-Docs/about/overview/" class="">Introduction</a>
             </li>
           
-            
-            
-
-            
-            
-
-
-      
-
-            
-
-            <li>
-
-
-          
-
-                    
-
-              <a href="/FHIR-Server-Docs/about/whats-new/" class="">Details</a>
-            </li>
-          
         </ul>
         
       </li>
@@ -626,6 +605,27 @@
               <a href="/FHIR-Server-Docs/installing/upgrading/" class="">Tracking license consumption of IBM FHIR Server</a>
             </li>
           
+            
+            
+
+            
+            
+
+
+      
+
+            
+
+            <li>
+
+
+          
+
+                    
+
+              <a href="/FHIR-Server-Docs/installing/migrating-to-apicurio/" class="">Upgrading</a>
+            </li>
+          
         </ul>
         
       </li>
@@ -680,6 +680,48 @@
               <a href="/FHIR-Server-Docs/security/encrypting-data/" class="">SecurityContextConstraints Requirements</a>
             </li>
           
+            
+            
+
+            
+            
+
+
+      
+
+            
+
+            <li>
+
+
+          
+
+                    
+
+              <a href="/FHIR-Server-Docs/security/secure-jmx-connections/" class="">Documentation</a>
+            </li>
+          
+            
+            
+
+            
+            
+
+
+      
+
+            
+
+            <li>
+
+
+          
+
+                    
+
+              <a href="/FHIR-Server-Docs/security/network-policies/" class="">License</a>
+            </li>
+          
         </ul>
         
       </li>
@@ -730,14 +772,14 @@
 
 <h2 id="create-a-project-namespace">Create a project (namespace)</h2>
 
-<p>Create a namespace into which the Event Streams instance will be installed by creating a <a href="https://docs.openshift.com/container-platform/4.6/applications/projects/working-with-projects.html" target="_blank">project</a>.
+<p>Create a namespace into which the IBM FHIR Server instance will be installed by creating a <a href="https://docs.openshift.com/container-platform/4.6/applications/projects/working-with-projects.html" target="_blank">project</a>.
 When you create a project, a namespace with the same name is also created.</p>
 
 <p>Ensure you use a namespace that is dedicated to a single instance of IBM FHIR Server.</p>
 
 <p>A single namespace per instance also allows for finer control of user accesses.</p>
 
-<p><strong>Important:</strong> Do not use any of the default or system namespaces to install an instance of Event Streams (some examples of these are: <code class="language-plaintext highlighter-rouge">default</code>, <code class="language-plaintext highlighter-rouge">kube-system</code>, <code class="language-plaintext highlighter-rouge">kube-public</code>, and <code class="language-plaintext highlighter-rouge">openshift-operators</code>).</p>
+<p><strong>Important:</strong> Do not use any of the default or system namespaces to install an instance of IBM FHIR Server (some examples of these are: <code class="language-plaintext highlighter-rouge">default</code>, <code class="language-plaintext highlighter-rouge">kube-system</code>, <code class="language-plaintext highlighter-rouge">kube-public</code>, and <code class="language-plaintext highlighter-rouge">openshift-operators</code>).</p>
 
 <h2 id="add-the-ibm-fhir-server-operator-to-the-catalog">Add the IBM FHIR Server operator to the catalog</h2>
 
@@ -778,7 +820,7 @@ spec:
   </li>
 </ol>
 
-<p>The IBM Operator Catalog source is added to the OperatorHub catalog, making the Event Streams operator available to install.</p>
+<p>The IBM Operator Catalog source is added to the OperatorHub catalog, making the IBM FHIR Server operator available to install.</p>
 
 <h2 id="installing-the-ibm-fhir-server-operator">Installing the IBM FHIR Server Operator</h2>
 
