@@ -27,7 +27,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-03-10T14:32:10+00:00">
+  <meta property="article:published_time" content="2021-03-10T15:27:50+00:00">
 
 
 
@@ -455,48 +455,6 @@
 
                     
 
-              <a href="/FHIR-Server-Docs/installing/prerequisites/" class="">Prerequisites</a>
-            </li>
-          
-            
-            
-
-            
-            
-
-
-      
-
-            
-
-            <li>
-
-
-          
-
-                    
-
-              <a href="/FHIR-Server-Docs/installing/planning/" class="">Limitations</a>
-            </li>
-          
-            
-            
-
-            
-            
-
-
-      
-
-            
-
-            <li>
-
-
-          
-
-                    
-
               <a href="/FHIR-Server-Docs/installing/installing/" class="">Installing</a>
             </li>
           
@@ -753,6 +711,35 @@
   <li>Multiple instances of the IBM FHIR Server operator may be deployed into different namespaces, one per namespace.</li>
 </ul>
 
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>Red Hat OpenShift Container Platform 4.5 or later installed on one of the following platforms:</p>
+
+<ul>
+  <li>Linux x86_64</li>
+</ul>
+
+<p>Connectivity to any of the following database systems:</p>
+
+<ul>
+  <li>IBM Db2 11.5 or later</li>
+  <li>PostgreSQL 12.1 or later</li>
+</ul>
+
+<p>Connectivity to any of the following event streaming platforms (optional):</p>
+
+<ul>
+  <li>Kafka 1.0 or higher</li>
+</ul>
+
+<h2 id="limitations">Limitations</h2>
+
+<ul>
+  <li>The Operator may be deployed into different namespaces, one per namespace.</li>
+  <li>The Operator has limited support for IBM FHIR Server configuration.</li>
+</ul>
+
+<p><em>Schema upgrades require downtime:</em> The IBM FHIR Server requires downtime to complete upgrades of the IBM FHIR Server’s relational data. During the upgrade Values tables are refreshed, updated and optimized for the workloads that the FHIR specification supports.</p>
 
           </div>
 
@@ -764,7 +751,10 @@
           
           <div class="fixedSidebar">
             <nav class="toc">
-              
+              <ul class="toc__menu">
+  <li><a href="#prerequisites">Prerequisites</a></li>
+  <li><a href="#limitations">Limitations</a></li>
+</ul>
             </nav>
           </div>
           
@@ -787,11 +777,11 @@
       </div>
     
     
-      <div class="next" onclick="window.open('/FHIR-Server-Docs/installing/prerequisites/','_self')">
+      <div class="next" onclick="window.open('/FHIR-Server-Docs/installing/installing/','_self')">
         <div class="container">
-          <a href="/FHIR-Server-Docs/installing/prerequisites/" class="pagination--pager" title="Next Item: Prerequisites
+          <a href="/FHIR-Server-Docs/installing/installing/" class="pagination--pager" title="Next Item: Installing
 ">Next</a>
-          <h2 class="titlePreview">Prerequisites
+          <h2 class="titlePreview">Installing
 </h2>
         </div>
       </div>

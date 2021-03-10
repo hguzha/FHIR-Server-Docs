@@ -13,21 +13,9 @@ var store = [{
         "teaser":null},{
         "title": "Installing IBM FHIR Server",
         "collection": "10.2",
-        "excerpt":"  The IBM FHIR Server operator can be installed in an on-line cluster through the OpenShift CLI.  Multiple instances of the IBM FHIR Server operator may be deployed into different namespaces, one per namespace.","categories": ["installing"],
+        "excerpt":"  The IBM FHIR Server operator can be installed in an on-line cluster through the OpenShift CLI.  Multiple instances of the IBM FHIR Server operator may be deployed into different namespaces, one per namespace.Prerequisites Red Hat OpenShift Container Platform 4.5 or later installed on one of the following platforms:   Linux x86_64Connectivity to any of the following database systems:   IBM Db2 11.5 or later  PostgreSQL 12.1 or laterConnectivity to any of the following event streaming platforms (optional):   Kafka 1.0 or higherLimitations   The Operator may be deployed into different namespaces, one per namespace.  The Operator has limited support for IBM FHIR Server configuration.Schema upgrades require downtime: The IBM FHIR Server requires downtime to complete upgrades of the IBM FHIR Server’s relational data. During the upgrade Values tables are refreshed, updated and optimized for the workloads that the FHIR specification supports. ","categories": ["installing"],
         "tags": [],
         "url": "http://localhost:4000/FHIR-Server-Docs/installing/trying-out/",
-        "teaser":null},{
-        "title": "Prerequisites",
-        "collection": "10.2",
-        "excerpt":"Prerequisites Red Hat OpenShift Container Platform 4.5 or later installed on one of the following platforms:   Linux x86_64Connectivity to any of the following database systems:   IBM Db2 11.5 or later  PostgreSQL 12.1 or laterConnectivity to any of the following event streaming platforms (optional):   Kafka 1.0 or higher","categories": ["installing"],
-        "tags": [],
-        "url": "http://localhost:4000/FHIR-Server-Docs/installing/prerequisites/",
-        "teaser":null},{
-        "title": "Limitations",
-        "collection": "10.2",
-        "excerpt":"Limitations   The Operator may be deployed into different namespaces, one per namespace.  The Operator has limited support for IBM FHIR Server configuration.Schema upgrades require downtime: The IBM FHIR Server requires downtime to complete upgrades of the IBM FHIR Server’s relational data. During the upgrade Values tables are refreshed, updated and optimized for the workloads that the FHIR specification supports. ","categories": ["installing"],
-        "tags": [],
-        "url": "http://localhost:4000/FHIR-Server-Docs/installing/planning/",
         "teaser":null},{
         "title": "Installing",
         "collection": "10.2",

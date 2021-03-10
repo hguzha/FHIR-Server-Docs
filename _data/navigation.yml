@@ -61,10 +61,10 @@ latestdocs:
     children:
       - title: "Installing IBM FHIR Server"
         url: /installing/trying-out/
-      - title: "Prerequisites"
-        url: /installing/prerequisites/
-      - title: "Limitations"
-        url: /installing/planning/
+ #     - title: "Prerequisites"
+ #       url: /installing/prerequisites/
+ #     - title: "Limitations"
+ #       url: /installing/planning/
  #     - title: "Performance and capacity planning"
  #       url: /installing/capacity-planning/
  #     - title: "Preparing for multizone clusters"
