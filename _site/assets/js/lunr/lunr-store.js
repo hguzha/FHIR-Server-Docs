@@ -13,7 +13,7 @@ var store = [{
         "teaser":null},{
         "title": "Installing IBM FHIR Server",
         "collection": "10.2",
-        "excerpt":"  The IBM FHIR Server operator can be installed in an on-line cluster through the OpenShift CLI. (Installing via OLM, or in an air-gapped cluster, is not yet supported.)  Multiple instances of the IBM FHIR Server operator may be deployed into different namespaces, one per namespace.","categories": ["installing"],
+        "excerpt":"  The IBM FHIR Server operator can be installed in an on-line cluster through the OpenShift CLI.  Multiple instances of the IBM FHIR Server operator may be deployed into different namespaces, one per namespace.","categories": ["installing"],
         "tags": [],
         "url": "http://localhost:4000/FHIR-Server-Docs/installing/trying-out/",
         "teaser":null},{
