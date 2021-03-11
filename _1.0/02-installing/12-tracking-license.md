@@ -1,8 +1,8 @@
 ---
 title: "Tracking license consumption of IBM FHIR Server"
-excerpt: "Upgrade your installation to the latest version."
+excerpt: "Tracking license."
 categories: installing
-slug: upgrading
+slug: tracking-license
 toc: true
 ---
 

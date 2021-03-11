@@ -1,6 +1,6 @@
 ---
 title: "Configuring"
-excerpt: "Configure your IBM Event Streams installation."
+excerpt: "Configure your IBM FHIR Server installation."
 categories: installing
 slug: configuring
 toc: true

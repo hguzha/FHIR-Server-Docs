@@ -2,7 +2,7 @@
 title: "SecurityContextConstraints Requirements"
 excerpt: ""
 categories: security
-slug: encrypting-data
+slug: security-context-constraints
 toc: true
 ---
 

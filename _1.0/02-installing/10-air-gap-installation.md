@@ -1,8 +1,8 @@
 ---
 title: "Air Gap Installation"
-excerpt: "Learn about the steps required to move from an open-source Kafka implementation to using Event Streams."
+excerpt: "."
 categories: installing
-slug: moving-from-oss-kafka
+slug: air-gap-installation
 toc: true
 ---
 

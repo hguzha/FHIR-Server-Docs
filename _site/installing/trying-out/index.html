@@ -3,14 +3,14 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Installing IBM FHIR Server - FHIR Server Docs</title>
-<meta name="description" content="Install a basic deployment to try out IBM Event Streams.">
+<meta name="description" content="Try out installing IBM FHIR Server.">
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="FHIR Server Docs">
 <meta property="og:url" content="http://localhost:4000/FHIR-Server-Docs/installing/trying-out/" />
 <meta property="og:title" content="Documentation | Installing IBM FHIR Server" />
-<meta property="og:description" content="Install a basic deployment to try out IBM Event Streams." />
+<meta property="og:description" content="Try out installing IBM FHIR Server." />
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="IBM Event Streams | Installing IBM FHIR Server" />
@@ -18,7 +18,7 @@
 
 
 
-  <meta property="og:description" content="Install a basic deployment to try out IBM Event Streams.">
+  <meta property="og:description" content="Try out installing IBM FHIR Server.">
 
 
 
@@ -27,7 +27,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-03-11T12:48:35+00:00">
+  <meta property="article:published_time" content="2021-03-11T13:52:28+00:00">
 
 
 
@@ -404,6 +404,48 @@
               <a href="/FHIR-Server-Docs/about/overview/" class="">Introduction</a>
             </li>
           
+            
+            
+
+            
+            
+
+
+      
+
+            
+
+            <li>
+
+
+          
+
+                    
+
+              <a href="/FHIR-Server-Docs/about/documentation/" class="">Documentation</a>
+            </li>
+          
+            
+            
+
+            
+            
+
+
+      
+
+            
+
+            <li>
+
+
+          
+
+                    
+
+              <a href="/FHIR-Server-Docs/about/license/" class="">License</a>
+            </li>
+          
         </ul>
         
       </li>
@@ -435,6 +477,27 @@
                     
 
               <a href="/FHIR-Server-Docs/installing/trying-out/" class="active">Installing IBM FHIR Server</a>
+            </li>
+          
+            
+            
+
+            
+            
+
+
+      
+
+            
+
+            <li>
+
+
+          
+
+                    
+
+              <a href="/FHIR-Server-Docs/installing/prerequisites/" class="">Prerequisites</a>
             </li>
           
             
@@ -497,7 +560,7 @@
 
                     
 
-              <a href="/FHIR-Server-Docs/installing/post-installation/" class="">Storage</a>
+              <a href="/FHIR-Server-Docs/installing/air-gap-installation/" class="">Air Gap Installation</a>
             </li>
           
             
@@ -518,7 +581,7 @@
 
                     
 
-              <a href="/FHIR-Server-Docs/installing/moving-from-oss-kafka/" class="">Air Gap Installation</a>
+              <a href="/FHIR-Server-Docs/installing/tracking-license/" class="">Tracking license consumption of IBM FHIR Server</a>
             </li>
           
             
@@ -539,49 +602,7 @@
 
                     
 
-              <a href="/FHIR-Server-Docs/installing/uninstalling/" class="">Resources Required</a>
-            </li>
-          
-            
-            
-
-            
-            
-
-
-      
-
-            
-
-            <li>
-
-
-          
-
-                    
-
-              <a href="/FHIR-Server-Docs/installing/upgrading/" class="">Tracking license consumption of IBM FHIR Server</a>
-            </li>
-          
-            
-            
-
-            
-            
-
-
-      
-
-            
-
-            <li>
-
-
-          
-
-                    
-
-              <a href="/FHIR-Server-Docs/installing/migrating-to-apicurio/" class="">Upgrading</a>
+              <a href="/FHIR-Server-Docs/installing/upgrading/" class="">Upgrading</a>
             </li>
           
         </ul>
@@ -614,7 +635,7 @@
 
                     
 
-              <a href="/FHIR-Server-Docs/security/managing-access/" class="">Security</a>
+              <a href="/FHIR-Server-Docs/security/security/" class="">Security</a>
             </li>
           
             
@@ -635,49 +656,7 @@
 
                     
 
-              <a href="/FHIR-Server-Docs/security/encrypting-data/" class="">SecurityContextConstraints Requirements</a>
-            </li>
-          
-            
-            
-
-            
-            
-
-
-      
-
-            
-
-            <li>
-
-
-          
-
-                    
-
-              <a href="/FHIR-Server-Docs/security/secure-jmx-connections/" class="">Documentation</a>
-            </li>
-          
-            
-            
-
-            
-            
-
-
-      
-
-            
-
-            <li>
-
-
-          
-
-                    
-
-              <a href="/FHIR-Server-Docs/security/network-policies/" class="">License</a>
+              <a href="/FHIR-Server-Docs/security/security-context-constraints/" class="">SecurityContextConstraints Requirements</a>
             </li>
           
         </ul>
@@ -711,27 +690,6 @@
   <li>Multiple instances of the IBM FHIR Server operator may be deployed into different namespaces, one per namespace.</li>
 </ul>
 
-<h2 id="prerequisites">Prerequisites</h2>
-
-<p>Red Hat OpenShift Container Platform 4.5 or later installed on one of the following platforms:</p>
-
-<ul>
-  <li>Linux x86_64</li>
-</ul>
-
-<p>Connectivity to any of the following database systems:</p>
-
-<ul>
-  <li>IBM Db2 11.5 or later</li>
-  <li>PostgreSQL 12.1 or later</li>
-</ul>
-
-<p>Connectivity to any of the following event streaming platforms (optional):</p>
-
-<ul>
-  <li>Kafka 1.0 or higher</li>
-</ul>
-
 <h2 id="limitations">Limitations</h2>
 
 <ul>
@@ -752,7 +710,6 @@
           <div class="fixedSidebar">
             <nav class="toc">
               <ul class="toc__menu">
-  <li><a href="#prerequisites">Prerequisites</a></li>
   <li><a href="#limitations">Limitations</a></li>
 </ul>
             </nav>
@@ -767,21 +724,21 @@
           
   <nav class="pagination">
     
-      <div class="previous" onclick="window.open('/FHIR-Server-Docs/about/overview/','_self')">
+      <div class="previous" onclick="window.open('/FHIR-Server-Docs/about/license/','_self')">
         <div class="container">
-          <a href="/FHIR-Server-Docs/about/overview/" class="pagination--pager" title="Previous Item: Introduction
+          <a href="/FHIR-Server-Docs/about/license/" class="pagination--pager" title="Previous Item: License
 ">Previous</a>
-          <h2 class="titlePreview">Introduction
+          <h2 class="titlePreview">License
 </h2>
         </div>
       </div>
     
     
-      <div class="next" onclick="window.open('/FHIR-Server-Docs/installing/installing/','_self')">
+      <div class="next" onclick="window.open('/FHIR-Server-Docs/installing/prerequisites/','_self')">
         <div class="container">
-          <a href="/FHIR-Server-Docs/installing/installing/" class="pagination--pager" title="Next Item: Installing
+          <a href="/FHIR-Server-Docs/installing/prerequisites/" class="pagination--pager" title="Next Item: Prerequisites
 ">Next</a>
-          <h2 class="titlePreview">Installing
+          <h2 class="titlePreview">Prerequisites
 </h2>
         </div>
       </div>

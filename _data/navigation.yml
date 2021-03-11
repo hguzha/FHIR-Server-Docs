@@ -43,10 +43,10 @@ latestdocs:
     children:
       - title: "Introduction"
         url: /about/overview/
-#      - title: "Details"
- #       url: /about/whats-new/
-#      - title: "Key concepts"
- #       url: /about/key-concepts/
+      - title: "Documentation"
+        url: /about/documentation/
+      - title: "License"
+        url: /about/license/
  #     - title: "Producing messages"
  #      url: /about/producing-messages/
  #     - title: "Consuming messages"
@@ -61,8 +61,8 @@ latestdocs:
     children:
       - title: "Installing IBM FHIR Server"
         url: /installing/trying-out/
- #     - title: "Prerequisites"
- #       url: /installing/prerequisites/
+      - title: "Prerequisites"
+        url: /installing/prerequisites/
  #     - title: "Limitations"
  #       url: /installing/planning/
  #     - title: "Performance and capacity planning"
@@ -73,16 +73,16 @@ latestdocs:
         url: /installing/installing/
       - title: "Configuring"
         url: /installing/configuring/
-      - title: "Storage"
-        url: /installing/post-installation/
+#      - title: "Storage"
+#        url: /installing/storage/
       - title: "Air Gap Installation"
-        url: /installing/moving-from-oss-kafka/
-      - title: "Resources Required"
-        url: /installing/uninstalling/
+        url: /installing/air-gap-installation/
+ #     - title: "Resources Required"
+ #       url: /installing/resources-required/
       - title: "Tracking license consumption of IBM FHIR Server"
-        url: /installing/upgrading/
+        url: /installing/tracking-license/
       - title: "Upgrading"
-        url: /installing/migrating-to-apicurio/
+        url: /installing/upgrading/
  # - title: Getting started
   #  children:
 #      - title: "Logging in"
@@ -122,13 +122,13 @@ latestdocs:
   - title: Security
     children:
       - title: "Security"
-        url: /security/managing-access/
+        url: /security/security/
       - title: "SecurityContextConstraints Requirements"
-        url: /security/encrypting-data/
-      - title: "Documentation"
-        url: /security/secure-jmx-connections/
-      - title: "License"
-        url: /security/network-policies/
+        url: /security/security-context-constraints/
+ #     - title: "Documentation"
+ #       url: /security/secure-jmx-connections/
+ #     - title: "License"
+ #       url: /security/network-policies/
 #      - title: "Considerations for GDPR"
 #        url: /security/gdpr-considerations/
 #  - title: Geo-replication

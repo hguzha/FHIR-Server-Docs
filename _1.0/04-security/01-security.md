@@ -2,7 +2,7 @@
 title: "Security"
 excerpt: ""
 categories: security
-slug: managing-access
+slug: security
 toc: true
 ---
 

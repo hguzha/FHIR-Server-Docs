@@ -2,23 +2,23 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Tracking license consumption of IBM FHIR Server - FHIR Server Docs</title>
-<meta name="description" content="Upgrade your installation to the latest version.">
+<!-- begin _includes/seo.html --><title>Upgrading to IBM FHIR Server Operator - FHIR Server Docs</title>
+<meta name="description" content="FHIR Server Documents">
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="FHIR Server Docs">
 <meta property="og:url" content="http://localhost:4000/FHIR-Server-Docs/installing/upgrading/" />
-<meta property="og:title" content="Documentation | Tracking license consumption of IBM FHIR Server" />
-<meta property="og:description" content="Upgrade your installation to the latest version." />
+<meta property="og:title" content="Documentation | Upgrading to IBM FHIR Server Operator" />
+<meta property="og:description" content="FHIR Server Documents" />
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="IBM Event Streams | Tracking license consumption of IBM FHIR Server" />
+<meta name="twitter:title" content="IBM Event Streams | Upgrading to IBM FHIR Server Operator" />
 
 
 
 
-  <meta property="og:description" content="Upgrade your installation to the latest version.">
+  <meta property="og:description" content="FHIR Server Documents">
 
 
 
@@ -27,7 +27,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-03-11T12:48:35+00:00">
+  <meta property="article:published_time" content="2021-03-11T13:52:28+00:00">
 
 
 
@@ -404,6 +404,48 @@
               <a href="/FHIR-Server-Docs/about/overview/" class="">Introduction</a>
             </li>
           
+            
+            
+
+            
+            
+
+
+      
+
+            
+
+            <li>
+
+
+          
+
+                    
+
+              <a href="/FHIR-Server-Docs/about/documentation/" class="">Documentation</a>
+            </li>
+          
+            
+            
+
+            
+            
+
+
+      
+
+            
+
+            <li>
+
+
+          
+
+                    
+
+              <a href="/FHIR-Server-Docs/about/license/" class="">License</a>
+            </li>
+          
         </ul>
         
       </li>
@@ -435,6 +477,27 @@
                     
 
               <a href="/FHIR-Server-Docs/installing/trying-out/" class="">Installing IBM FHIR Server</a>
+            </li>
+          
+            
+            
+
+            
+            
+
+
+      
+
+            
+
+            <li>
+
+
+          
+
+                    
+
+              <a href="/FHIR-Server-Docs/installing/prerequisites/" class="">Prerequisites</a>
             </li>
           
             
@@ -497,7 +560,7 @@
 
                     
 
-              <a href="/FHIR-Server-Docs/installing/post-installation/" class="">Storage</a>
+              <a href="/FHIR-Server-Docs/installing/air-gap-installation/" class="">Air Gap Installation</a>
             </li>
           
             
@@ -518,7 +581,7 @@
 
                     
 
-              <a href="/FHIR-Server-Docs/installing/moving-from-oss-kafka/" class="">Air Gap Installation</a>
+              <a href="/FHIR-Server-Docs/installing/tracking-license/" class="">Tracking license consumption of IBM FHIR Server</a>
             </li>
           
             
@@ -539,49 +602,7 @@
 
                     
 
-              <a href="/FHIR-Server-Docs/installing/uninstalling/" class="">Resources Required</a>
-            </li>
-          
-            
-            
-
-            
-            
-
-
-      
-
-            
-
-            <li>
-
-
-          
-
-                    
-
-              <a href="/FHIR-Server-Docs/installing/upgrading/" class="active">Tracking license consumption of IBM FHIR Server</a>
-            </li>
-          
-            
-            
-
-            
-            
-
-
-      
-
-            
-
-            <li>
-
-
-          
-
-                    
-
-              <a href="/FHIR-Server-Docs/installing/migrating-to-apicurio/" class="">Upgrading</a>
+              <a href="/FHIR-Server-Docs/installing/upgrading/" class="active">Upgrading</a>
             </li>
           
         </ul>
@@ -614,7 +635,7 @@
 
                     
 
-              <a href="/FHIR-Server-Docs/security/managing-access/" class="">Security</a>
+              <a href="/FHIR-Server-Docs/security/security/" class="">Security</a>
             </li>
           
             
@@ -635,49 +656,7 @@
 
                     
 
-              <a href="/FHIR-Server-Docs/security/encrypting-data/" class="">SecurityContextConstraints Requirements</a>
-            </li>
-          
-            
-            
-
-            
-            
-
-
-      
-
-            
-
-            <li>
-
-
-          
-
-                    
-
-              <a href="/FHIR-Server-Docs/security/secure-jmx-connections/" class="">Documentation</a>
-            </li>
-          
-            
-            
-
-            
-            
-
-
-      
-
-            
-
-            <li>
-
-
-          
-
-                    
-
-              <a href="/FHIR-Server-Docs/security/network-policies/" class="">License</a>
+              <a href="/FHIR-Server-Docs/security/security-context-constraints/" class="">SecurityContextConstraints Requirements</a>
             </li>
           
         </ul>
@@ -700,43 +679,19 @@
           
           <header>
             <h1 id="page-title" class="page__title" itemprop="headline">
-              Tracking license consumption of IBM FHIR Server
+              Upgrading to IBM FHIR Server Operator
 </h1>
             
           </header>
           
           <div class="content">
-            <h2 id="tracking-license-consumption-of-ibm-fhir-server">Tracking license consumption of IBM FHIR Server</h2>
+            <h3 id="upgrading-to-ibm-fhir-server-operator">Upgrading to IBM FHIR Server Operator</h3>
 
-<p>License Service is required for monitoring and measuring license usage of IBM FHIR Server in accord with the pricing rule for containerized environments. Manual license measurements are not allowed. Deploy License Service on all clusters where IBM FHIR Server is installed.</p>
+<p>Starting with IBM FHIR Server Operator, the IBM FHIR Server configuration requires a separate datasource configuration from the fhir-server-config.json configuration file.</p>
 
-<p>The IBM FHIR Server Operator contains an integrated service for measuring the license usage at the cluster level for license evidence purposes.</p>
+<p>Before upgrading to IBM FHIR Server Operator, set the IBM_FHIR_SERVER_DATASOURCE secret key as described in <a href="inventory/ibmFhirServerOperator/README.md#1-define-ibm-fhir-server-configuration">Define IBM FHIR Server configuration</a>.</p>
 
-<h3 id="overview">Overview</h3>
-
-<p>The integrated licensing solution collects and stores the license usage information which can be used for audit purposes and for tracking license consumption in cloud environments. The solution works in the background and does not require any configuration. Only one instance of the License Service is deployed per cluster regardless of the number of Cloud Paks and containerized products that you have installed on the cluster.</p>
-
-<h3 id="deploying-license-service">Deploying License Service</h3>
-
-<p>Deploy License Service on each cluster where IBM FHIR Server is installed. License Service can be deployed on any Kubernetes cluster. For more information about License Service, how to install and use it, see the <a href="https://ibm.biz/license_service4containers">License Service</a> documentation.</p>
-
-<h3 id="validating-if-license-service-is-deployed-on-the-cluster">Validating if License Service is deployed on the cluster</h3>
-
-<p>To ensure license reporting continuity for license compliance purposes make sure that License Service is successfully deployed. It is recommended to periodically verify whether it is active.</p>
-
-<p>To validate whether License Service is deployed and running on the cluster, you can, for example, log into the Red Hat OpenShift Container Platform cluster and run the following command:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ oc get pods --all-namespaces | grep ibm-licensing | grep -v operator
-</code></pre></div></div>
-
-<p>The following response is a confirmation of successful deployment:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1/1     Running
-</code></pre></div></div>
-
-<h3 id="archiving-license-usage-data">Archiving license usage data</h3>
-
-<p>Remember to archive the license usage evidence before you decommission the cluster where IBM FHIR Server was deployed. Retrieve the audit snapshot for the period when IBM FHIR Server was on the cluster and store it in case of audit.</p>
-
-<p>For more information about the licensing solution, see <a href="https://www.ibm.com/support/knowledgecenter/SSHKN6/license-service/1.x.x/overview.html">License Service documentation</a>.</p>
+<p>Until the IBM_FHIR_SERVER_DATASOURCE secret key is set, the IBM FHIR Server instance will not be functional.</p>
 
           </div>
 
@@ -749,14 +704,7 @@
           <div class="fixedSidebar">
             <nav class="toc">
               <ul class="toc__menu">
-  <li><a href="#tracking-license-consumption-of-ibm-fhir-server">Tracking license consumption of IBM FHIR Server</a>
-    <ul>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#deploying-license-service">Deploying License Service</a></li>
-      <li><a href="#validating-if-license-service-is-deployed-on-the-cluster">Validating if License Service is deployed on the cluster</a></li>
-      <li><a href="#archiving-license-usage-data">Archiving license usage data</a></li>
-    </ul>
-  </li>
+  <li><a href="#upgrading-to-ibm-fhir-server-operator">Upgrading to IBM FHIR Server Operator</a></li>
 </ul>
             </nav>
           </div>
@@ -770,21 +718,21 @@
           
   <nav class="pagination">
     
-      <div class="previous" onclick="window.open('/FHIR-Server-Docs/installing/uninstalling/','_self')">
+      <div class="previous" onclick="window.open('/FHIR-Server-Docs/installing/tracking-license/','_self')">
         <div class="container">
-          <a href="/FHIR-Server-Docs/installing/uninstalling/" class="pagination--pager" title="Previous Item: Resources Required
+          <a href="/FHIR-Server-Docs/installing/tracking-license/" class="pagination--pager" title="Previous Item: Tracking license consumption of IBM FHIR Server
 ">Previous</a>
-          <h2 class="titlePreview">Resources Required
+          <h2 class="titlePreview">Tracking license consumption of IBM FHIR Server
 </h2>
         </div>
       </div>
     
     
-      <div class="next" onclick="window.open('/FHIR-Server-Docs/installing/migrating-to-apicurio/','_self')">
+      <div class="next" onclick="window.open('/FHIR-Server-Docs/security/security/','_self')">
         <div class="container">
-          <a href="/FHIR-Server-Docs/installing/migrating-to-apicurio/" class="pagination--pager" title="Next Item: Upgrading to IBM FHIR Server Operator v1.1.0
+          <a href="/FHIR-Server-Docs/security/security/" class="pagination--pager" title="Next Item: Security
 ">Next</a>
-          <h2 class="titlePreview">Upgrading to IBM FHIR Server Operator v1.1.0
+          <h2 class="titlePreview">Security
 </h2>
         </div>
       </div>
