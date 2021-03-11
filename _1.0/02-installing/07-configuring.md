@@ -6,18 +6,10 @@ slug: configuring
 toc: true
 ---
 
-# IBM FHIR Server Operator
-
-This README provides instructions about installing an instance of IBM FHIR Server.
-
-This inventory item contains:
-- References to all the images used by an instance of IBM FHIR Server.
-- A sample IBMFHIRServer resource for installing an instance of IBM FHIR Server.
-
 ## Prerequisites
 
 Installing an instance of IBM FHIR Server requires an installed IBM FHIR Server Operator.
-See inventory item [ibmFhirServerOperatorSetup](../ibmFhirServerOperatorSetup/README.md#installing) for instructions to install the IBM FHIR Server Operator.
+See inventory item [ibmFhirServerOperatorSetup](#install-the-fhir-server-operator) for instructions to install the IBM FHIR Server Operator.
 
 Installing an instance of IBM FHIR Server requires at least namespace administration privileges. 
 

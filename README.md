@@ -1,4 +1,4 @@
-# event-streams
+# FHIR Server Docs
 
 This repository is used to track the feature requests and issues opened through our GitHub [support channel](https://ibm.github.io/event-streams/support/).
 

@@ -9,8 +9,6 @@ toc: true
 
 ## Introduction
 
-This CASE provides an Operator to manage IBM FHIR Server instances.
-
 IBM FHIR Server is capable of processing, validating, and storing healthcare data in an industry-standard format that can be used for running search and other reporting capabilities. Built for the enterprise and offering cloud portability, it's an integral component of a data integration pipeline.
  
 By applying standardized semantics and data models in accordance with the HL7 Fast Healthcare Interoperability Resources (FHIR) specification, IBM FHIR Server makes it easier to maximize insights across systems. It enables capabilities like advanced analytics and machine learning, which can drive better health outcomes and organizational impact.

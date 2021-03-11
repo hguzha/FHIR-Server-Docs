@@ -81,8 +81,8 @@ latestdocs:
  #       url: /installing/resources-required/
       - title: "Tracking license consumption of IBM FHIR Server"
         url: /installing/tracking-license/
-      - title: "Upgrading"
-        url: /installing/upgrading/
+ #     - title: "Upgrading"
+ #       url: /installing/upgrading/
  # - title: Getting started
   #  children:
 #      - title: "Logging in"
