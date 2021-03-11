@@ -3,7 +3,7 @@ title: "Home"
 layout: splash
 permalink: /
 mastheadNavItem: Documentation
-collection:
+collection: 1.0
 quickLinks:
   - link:
     - title: Introduction
