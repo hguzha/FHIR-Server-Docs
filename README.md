@@ -4,4 +4,4 @@ This repository is used to track the feature requests and issues opened through 
 
 To see the current feature requests and issues, go to the [issues tab](https://github.com/IBM/event-streams/issues).
 
-This repository also hosts the source files for the IBM Event Streams end-user [documentation site](https://ibm.github.io/event-streams/).
+This repository also hosts the source files for the FHIR Server Docs [documentation site](https://ibm.github.io/event-streams/).
