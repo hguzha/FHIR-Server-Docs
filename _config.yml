@@ -218,19 +218,25 @@ collections:
     #version: true
     #permalink: /:collection/:categories/:slug/
     #order: 5
-  #"10.1":
-    #label: "10.1"
-    #output: true
-    #version: true
-    #permalink: /:collection/:categories/:slug/
-    #order: 6
   "1.0":
     label: "1.0"
     output: true
     version: true
+    permalink: /:collection/:categories/:slug/
+    order: 1
+  "1.1":
+    label: "1.1"
+    output: true
+    version: true
+    permalink: /:categories/:slug/
+    order: 2
+  "1.2":
+    label: "1.2"
+    output: true
+    version: true
     tag: Latest
     permalink: /:categories/:slug/
-    order: 7
+    order: 3  
   "tutorials":
     output: true
     permalink: /:collection/:path/
@@ -399,7 +405,7 @@ defaults:
       #mastheadNavItem: Documentation
       #sidebar:
         #nav: "101docs"
-   #_1.0
+    #_1.0
   - scope:
       path: ""
       type: "1.0"
@@ -413,8 +419,38 @@ defaults:
       latest: true
       mastheadNavItem: Documentation
       sidebar:
-        nav: "latestdocs"
-
+        nav: "10docs"
+    #_1.1
+  - scope:
+      path: ""
+      type: "1.1"
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comment: false
+      version: true
+      latest: true
+      mastheadNavItem: Documentation
+      sidebar:
+        nav: "11docs" 
+        
+    #_1.2
+  - scope:
+      path: ""
+      type: "1.2"
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comment: false
+      version: true
+      latest: true
+      mastheadNavItem: Documentation
+      sidebar:
+        nav: "latestdocs"    
 
 # Sass/SCSS
 sass:
