@@ -228,7 +228,7 @@ collections:
     label: "1.1"
     output: true
     version: true
-    permalink: /:categories/:slug/
+    permalink: /:collection/:categories/:slug/
     order: 2
   "1.2":
     label: "1.2"
